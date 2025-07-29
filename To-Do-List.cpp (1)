@@ -1,0 +1,320 @@
+#include <iostream>
+#include <vector>
+#include <string>
+
+using namespace std;
+
+class ToDoList {
+private:
+    vector<string> tasks;
+
+public:
+    void addTask(const string& task) {
+        tasks.push_back(task);
+        cout << "Task added: " << task << endl;
+    }
+
+    void viewTasks() const {
+        if (tasks.empty()) {
+            cout << "No tasks available." << endl;
+            return;
+        }
+
+        cout << "Tasks:" << endl;
+        for (size_t i = 0; i < tasks.size(); ++i) {
+            cout << i + 1 << ". " << tasks[i] << endl;
+        }
+    }
+
+    void deleteTask(size_t index) {
+        if (index >= tasks.size()) {
+            cout << "Invalid task index." << endl;
+            return;
+        }
+
+        cout << "Task deleted: " << tasks[index] << endl;
+        tasks.erase(tasks.begin() + index);
+    }
+};
+
+int main() {
+    ToDoList toDoList;
+
+    while (true) {
+        cout << "1. Add Task" << endl;
+        cout << "2. View Tasks" << endl;
+        cout << "3. Delete Task" << endl;
+        cout << "4. Exit" << endl;
+
+        int choice;
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        switch (choice) {
+            case 1: {
+                string task;
+                cout << "Enter task: ";
+                cin.ignore(); // Ignore newline character
+                getline(cin, task);
+                toDoList.addTask(task);
+                break;
+            }
+            case 2:
+                toDoList.viewTasks();
+                break;
+#include <iostream>
+#include <vector>
+#include <string>
+
+using namespace std;
+
+class ToDoList {
+private:
+    vector<string> tasks;
+
+public:
+    void addTask(const string& task) {
+        tasks.push_back(task);
+        cout << "Task added: " << task << endl;
+    }
+
+    void viewTasks() const {
+        if (tasks.empty()) {
+            cout << "No tasks available." << endl;
+            return;
+        }
+
+        cout << "Tasks:" << endl;
+        for (size_t i = 0; i < tasks.size(); ++i) {
+            cout << i + 1 << ". " << tasks[i] << endl;
+        }
+    }
+
+    void deleteTask(size_t index) {
+        if (index >= tasks.size()) {
+            cout << "Invalid task index." << endl;
+            return;
+        }
+
+        cout << "Task deleted: " << tasks[index] << endl;
+        tasks.erase(tasks.begin() + index);
+    }
+};
+
+int main() {
+    ToDoList toDoList;
+
+    while (true) {
+        cout << "1. Add Task" << endl;
+        cout << "2. View Tasks" << endl;
+        cout << "3. Delete Task" << endl;
+        cout << "4. Exit" << endl;
+
+        int choice;
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        switch (choice) {
+            case 1: {
+                string task;
+                cout << "Enter task: ";
+                cin.ignore(); // Ignore newline character
+                getline(cin, task);
+                toDoList.addTask(task);
+                break;
+            }
+            case 2:
+                toDoList.viewTasks();
+                break;
+#include <iostream>
+#include <vector>
+#include <string>
+
+using namespace std;
+
+class ToDoList {
+private:
+    vector<string> tasks;
+
+public:
+    void addTask(const string& task) {
+        tasks.push_back(task);
+        cout << "Task added: " << task << endl;
+    }
+
+    void viewTasks() const {
+        if (tasks.empty()) {
+            cout << "No tasks available." << endl;
+            return;
+        }
+
+        cout << "Tasks:" << endl;
+        for (size_t i = 0; i < tasks.size(); ++i) {
+            cout << i + 1 << ". " << tasks[i] << endl;
+        }
+    }
+
+    void deleteTask(size_t index) {
+        if (index >= tasks.size()) {
+            cout << "Invalid task index." << endl;
+            return;
+        }
+
+        cout << "Task deleted: " << tasks[index] << endl;
+        tasks.erase(tasks.begin() + index);
+    }
+};
+
+int main() {
+    ToDoList toDoList;
+
+    while (true) {
+        cout << "1. Add Task" << endl;
+        cout << "2. View Tasks" << endl;
+        cout << "3. Delete Task" << endl;
+        cout << "4. Exit" << endl;
+
+        int choice;
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        switch (choice) {
+            case 1: {
+                string task;
+                cout << "Enter task: ";
+                cin.ignore(); // Ignore newline character
+                getline(cin, task);
+                toDoList.addTask(task);
+                break;
+            }
+            case 2:
+                toDoList.viewTasks();
+                break;
+#include <iostream>
+#include <vector>
+#include <string>
+
+using namespace std;
+
+class ToDoList {
+private:
+    vector<string> tasks;
+
+public:
+    void addTask(const string& task) {
+        tasks.push_back(task);
+        cout << "Task added: " << task << endl;
+    }
+
+    void viewTasks() const {
+        if (tasks.empty()) {
+            cout << "No tasks available." << endl;
+            return;
+        }
+
+        cout << "Tasks:" << endl;
+        for (size_t i = 0; i < tasks.size(); ++i) {
+            cout << i + 1 << ". " << tasks[i] << endl;
+        }
+    }
+
+    void deleteTask(size_t index) {
+        if (index >= tasks.size()) {
+            cout << "Invalid task index." << endl;
+            return;
+        }
+
+        cout << "Task deleted: " << tasks[index] << endl;
+        tasks.erase(tasks.begin() + index);
+    }
+};
+
+int main() {
+    ToDoList toDoList;
+
+    while (true) {
+        cout << "1. Add Task" << endl;
+        cout << "2. View Tasks" << endl;
+        cout << "3. Delete Task" << endl;
+        cout << "4. Exit" << endl;
+
+        int choice;
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        switch (choice) {
+            case 1: {
+                string task;
+                cout << "Enter task: ";
+                cin.ignore(); // Ignore newline character
+                getline(cin, task);
+                toDoList.addTask(task);
+                break;
+            }
+            case 2:
+                toDoList.viewTasks();
+                break;
+#include <iostream>
+#include <vector>
+#include <string>
+
+using namespace std;
+
+class ToDoList {
+private:
+    vector<string> tasks;
+
+public:
+    void addTask(const string& task) {
+        tasks.push_back(task);
+        cout << "Task added: " << task << endl;
+    }
+
+    void viewTasks() const {
+        if (tasks.empty()) {
+            cout << "No tasks available." << endl;
+            return;
+        }
+
+        cout << "Tasks:" << endl;
+        for (size_t i = 0; i < tasks.size(); ++i) {
+            cout << i + 1 << ". " << tasks[i] << endl;
+        }
+    }
+
+    void deleteTask(size_t index) {
+        if (index >= tasks.size()) {
+            cout << "Invalid task index." << endl;
+            return;
+        }
+
+        cout << "Task deleted: " << tasks[index] << endl;
+        tasks.erase(tasks.begin() + index);
+    }
+};
+
+int main() {
+    ToDoList toDoList;
+
+    while (true) {
+        cout << "1. Add Task" << endl;
+        cout << "2. View Tasks" << endl;
+        cout << "3. Delete Task" << endl;
+        cout << "4. Exit" << endl;
+
+        int choice;
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        switch (choice) {
+            case 1: {
+                string task;
+                cout << "Enter task: ";
+                cin.ignore(); // Ignore newline character
+                getline(cin, task);
+                toDoList.addTask(task);
+                break;
+            }
+            case 2:
+                toDoList.viewTasks();
+                break;
